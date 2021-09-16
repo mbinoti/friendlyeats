@@ -14,6 +14,8 @@
 
 import 'dart:math';
 
+import 'package:flutter/foundation.dart';
+
 final cities = [
   'Albuquerque',
   'Arlington',
@@ -160,5 +162,6 @@ String getRandomCity() {
 
 String getRandomPhoto() {
   final photoId = random.nextInt(21) + 1;
+  print('----->>>>>>photoId=$photoId');
   return 'https://storage.googleapis.com/firestorequickstarts.appspot.com/food_$photoId.png';
 }
